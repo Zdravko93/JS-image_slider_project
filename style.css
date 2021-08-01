@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.carousel-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 30em;
+    margin-bottom: 1em;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-1 {
+    background: url('images/beach-1236581_1280.jpg');
+}
+
+.slide-2 {
+    background: url('images/beach-418742_1280.jpg');
+}
+
+.slide-3 {
+    background: url('images/sea-shell-6495338_1280.jpg');
+}
+
+.prevBtn,
+.nextBtn {
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 10px;
+    background: rgba(0, 0, 0, .2);
+    color: white;
+    top: 50%;
+    transition: background 500ms ease-in-out;
+    transform: translateY(-80%);
+    cursor: pointer;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+    background: rgba(0, 0, 0, .9);
+}
+
+.prevBtn {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.nextBtn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #bbb;
+    margin: 0 3.5px;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: background 250ms ease-in-out;
+}
+
+.dot:hover, 
+.active {
+    background: #717279;
+}
+
+.fade-effect {
+    -webkit-animation-name: fade-effect;
+    -webkit-animation-duration: 1.35s;
+    animation-name: fade-effect;
+    animation-duration: 1.35s;
+}
+
+@keyframes fade-effect {
+    from {
+        opacity: .34;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
